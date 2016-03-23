@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  Utility.h
 //  TwitterMention
 //
 //  Created by Ravi Shah on 3/18/16.
 //  Copyright © 2016 Ravi Shah. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface ViewController : UIViewController
-
-
+@interface RSUtility : NSObject
++(BOOL)isAuthenticated;
 @end
-

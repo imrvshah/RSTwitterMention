@@ -8,13 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		501019F41C9CFB040078F4E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 501019F31C9CFB040078F4E3 /* main.m */; };
-		501019F71C9CFB040078F4E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 501019F61C9CFB040078F4E3 /* AppDelegate.m */; };
-		501019FA1C9CFB040078F4E3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 501019F91C9CFB040078F4E3 /* ViewController.m */; };
+		501019F71C9CFB040078F4E3 /* RSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 501019F61C9CFB040078F4E3 /* RSAppDelegate.m */; };
+		501019FA1C9CFB040078F4E3 /* RSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 501019F91C9CFB040078F4E3 /* RSViewController.m */; };
 		501019FD1C9CFB040078F4E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 501019FB1C9CFB040078F4E3 /* Main.storyboard */; };
 		501019FF1C9CFB040078F4E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 501019FE1C9CFB040078F4E3 /* Assets.xcassets */; };
 		50101A021C9CFB040078F4E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50101A001C9CFB040078F4E3 /* LaunchScreen.storyboard */; };
 		50101A0D1C9CFB040078F4E3 /* TwitterMentionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50101A0C1C9CFB040078F4E3 /* TwitterMentionTests.m */; };
 		50101A181C9CFB040078F4E3 /* TwitterMentionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50101A171C9CFB040078F4E3 /* TwitterMentionUITests.m */; };
+		50101A2D1C9D03600078F4E3 /* RSUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 50101A2C1C9D03600078F4E3 /* RSUtility.m */; };
+		50101A301C9D05940078F4E3 /* RSWebStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 50101A2F1C9D05940078F4E3 /* RSWebStore.m */; };
+		50101A3A1C9D12BA0078F4E3 /* RSTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 50101A391C9D12BA0078F4E3 /* RSTweet.m */; };
+		50101A411C9D18530078F4E3 /* RSUITableViewLoadingFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 50101A3F1C9D18530078F4E3 /* RSUITableViewLoadingFooter.m */; };
+		50101A421C9D18530078F4E3 /* RSUITableViewLoadingFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50101A401C9D18530078F4E3 /* RSUITableViewLoadingFooter.xib */; };
+		50101A891C9DE4380078F4E3 /* RSTweetViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 50101A871C9DE4380078F4E3 /* RSTweetViewCell.m */; };
+		50101A8A1C9DE4380078F4E3 /* RSTweetViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50101A881C9DE4380078F4E3 /* RSTweetViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +44,10 @@
 /* Begin PBXFileReference section */
 		501019EF1C9CFB040078F4E3 /* TwitterMention.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterMention.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		501019F31C9CFB040078F4E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		501019F51C9CFB040078F4E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		501019F61C9CFB040078F4E3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		501019F81C9CFB040078F4E3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		501019F91C9CFB040078F4E3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		501019F51C9CFB040078F4E3 /* RSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSAppDelegate.h; sourceTree = "<group>"; };
+		501019F61C9CFB040078F4E3 /* RSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSAppDelegate.m; sourceTree = "<group>"; };
+		501019F81C9CFB040078F4E3 /* RSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSViewController.h; sourceTree = "<group>"; };
+		501019F91C9CFB040078F4E3 /* RSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSViewController.m; sourceTree = "<group>"; };
 		501019FC1C9CFB040078F4E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		501019FE1C9CFB040078F4E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50101A011C9CFB040078F4E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +58,19 @@
 		50101A131C9CFB040078F4E3 /* TwitterMentionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterMentionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50101A171C9CFB040078F4E3 /* TwitterMentionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwitterMentionUITests.m; sourceTree = "<group>"; };
 		50101A191C9CFB040078F4E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50101A2B1C9D03600078F4E3 /* RSUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSUtility.h; sourceTree = "<group>"; };
+		50101A2C1C9D03600078F4E3 /* RSUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSUtility.m; sourceTree = "<group>"; };
+		50101A2E1C9D05940078F4E3 /* RSWebStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSWebStore.h; sourceTree = "<group>"; };
+		50101A2F1C9D05940078F4E3 /* RSWebStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSWebStore.m; sourceTree = "<group>"; };
+		50101A311C9D07110078F4E3 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		50101A381C9D12BA0078F4E3 /* RSTweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSTweet.h; sourceTree = "<group>"; };
+		50101A391C9D12BA0078F4E3 /* RSTweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSTweet.m; sourceTree = "<group>"; };
+		50101A3E1C9D18530078F4E3 /* RSUITableViewLoadingFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSUITableViewLoadingFooter.h; sourceTree = "<group>"; };
+		50101A3F1C9D18530078F4E3 /* RSUITableViewLoadingFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSUITableViewLoadingFooter.m; sourceTree = "<group>"; };
+		50101A401C9D18530078F4E3 /* RSUITableViewLoadingFooter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RSUITableViewLoadingFooter.xib; sourceTree = "<group>"; };
+		50101A861C9DE4380078F4E3 /* RSTweetViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSTweetViewCell.h; sourceTree = "<group>"; };
+		50101A871C9DE4380078F4E3 /* RSTweetViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSTweetViewCell.m; sourceTree = "<group>"; };
+		50101A881C9DE4380078F4E3 /* RSTweetViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RSTweetViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +121,14 @@
 		501019F11C9CFB040078F4E3 /* TwitterMention */ = {
 			isa = PBXGroup;
 			children = (
-				501019F51C9CFB040078F4E3 /* AppDelegate.h */,
-				501019F61C9CFB040078F4E3 /* AppDelegate.m */,
-				501019F81C9CFB040078F4E3 /* ViewController.h */,
-				501019F91C9CFB040078F4E3 /* ViewController.m */,
+				50101A2A1C9D02DD0078F4E3 /* Utility */,
+				50101A291C9D02D00078F4E3 /* Store */,
+				50101A281C9D02B70078F4E3 /* TableViewCelll */,
+				50101A271C9D02AC0078F4E3 /* Model */,
+				501019F51C9CFB040078F4E3 /* RSAppDelegate.h */,
+				501019F61C9CFB040078F4E3 /* RSAppDelegate.m */,
+				501019F81C9CFB040078F4E3 /* RSViewController.h */,
+				501019F91C9CFB040078F4E3 /* RSViewController.m */,
 				501019FB1C9CFB040078F4E3 /* Main.storyboard */,
 				501019FE1C9CFB040078F4E3 /* Assets.xcassets */,
 				50101A001C9CFB040078F4E3 /* LaunchScreen.storyboard */,
@@ -138,6 +162,47 @@
 				50101A191C9CFB040078F4E3 /* Info.plist */,
 			);
 			path = TwitterMentionUITests;
+			sourceTree = "<group>";
+		};
+		50101A271C9D02AC0078F4E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				50101A381C9D12BA0078F4E3 /* RSTweet.h */,
+				50101A391C9D12BA0078F4E3 /* RSTweet.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		50101A281C9D02B70078F4E3 /* TableViewCelll */ = {
+			isa = PBXGroup;
+			children = (
+				50101A861C9DE4380078F4E3 /* RSTweetViewCell.h */,
+				50101A871C9DE4380078F4E3 /* RSTweetViewCell.m */,
+				50101A881C9DE4380078F4E3 /* RSTweetViewCell.xib */,
+			);
+			name = TableViewCelll;
+			sourceTree = "<group>";
+		};
+		50101A291C9D02D00078F4E3 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				50101A2E1C9D05940078F4E3 /* RSWebStore.h */,
+				50101A2F1C9D05940078F4E3 /* RSWebStore.m */,
+			);
+			name = Store;
+			sourceTree = "<group>";
+		};
+		50101A2A1C9D02DD0078F4E3 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				50101A2B1C9D03600078F4E3 /* RSUtility.h */,
+				50101A2C1C9D03600078F4E3 /* RSUtility.m */,
+				50101A3E1C9D18530078F4E3 /* RSUITableViewLoadingFooter.h */,
+				50101A3F1C9D18530078F4E3 /* RSUITableViewLoadingFooter.m */,
+				50101A401C9D18530078F4E3 /* RSUITableViewLoadingFooter.xib */,
+				50101A311C9D07110078F4E3 /* Constant.h */,
+			);
+			name = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +311,8 @@
 				50101A021C9CFB040078F4E3 /* LaunchScreen.storyboard in Resources */,
 				501019FF1C9CFB040078F4E3 /* Assets.xcassets in Resources */,
 				501019FD1C9CFB040078F4E3 /* Main.storyboard in Resources */,
+				50101A8A1C9DE4380078F4E3 /* RSTweetViewCell.xib in Resources */,
+				50101A421C9D18530078F4E3 /* RSUITableViewLoadingFooter.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,8 +337,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				501019FA1C9CFB040078F4E3 /* ViewController.m in Sources */,
-				501019F71C9CFB040078F4E3 /* AppDelegate.m in Sources */,
+				50101A2D1C9D03600078F4E3 /* RSUtility.m in Sources */,
+				501019FA1C9CFB040078F4E3 /* RSViewController.m in Sources */,
+				50101A891C9DE4380078F4E3 /* RSTweetViewCell.m in Sources */,
+				50101A301C9D05940078F4E3 /* RSWebStore.m in Sources */,
+				50101A3A1C9D12BA0078F4E3 /* RSTweet.m in Sources */,
+				501019F71C9CFB040078F4E3 /* RSAppDelegate.m in Sources */,
+				50101A411C9D18530078F4E3 /* RSUITableViewLoadingFooter.m in Sources */,
 				501019F41C9CFB040078F4E3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,6 +568,7 @@
 				50101A1E1C9CFB040078F4E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50101A1F1C9CFB040078F4E3 /* Build configuration list for PBXNativeTarget "TwitterMentionTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +577,7 @@
 				50101A211C9CFB040078F4E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50101A221C9CFB040078F4E3 /* Build configuration list for PBXNativeTarget "TwitterMentionUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +586,7 @@
 				50101A241C9CFB040078F4E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

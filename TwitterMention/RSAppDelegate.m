@@ -6,13 +6,13 @@
 //  Copyright © 2016 Ravi Shah. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "RSAppDelegate.h"
 
-@interface AppDelegate ()
+@interface RSAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation RSAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
