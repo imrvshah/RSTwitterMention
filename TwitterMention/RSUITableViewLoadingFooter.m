@@ -14,7 +14,7 @@
 
 @end
 
-@implementation UITableViewLoadingFooter
+@implementation RSUITableViewLoadingFooter
 
 - (void)awakeFromNib
 {

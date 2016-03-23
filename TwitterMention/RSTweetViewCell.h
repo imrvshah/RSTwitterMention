@@ -13,7 +13,7 @@
 @protocol TweetViewCellDelegate <NSObject>
 
 @optional
-- (void)processBtnClick:(UITableViewCell *)button;
+- (void)processBtnClick:(NSInteger)tag;
 @end
 @interface RSTweetViewCell : UITableViewCell
 
@@ -28,7 +28,7 @@
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *tweetContentViewHeight;
 
 + (CGFloat)heightOfCellWithTweet:(RSTweet*)tweet;
-- (void)setupViewForTweet:(Tweet*)tweet ;
+- (void)setupViewForTweet:(RSTweet*)tweet ;
 - (void)setupView;
 
 

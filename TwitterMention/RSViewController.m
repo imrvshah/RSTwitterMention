@@ -11,7 +11,7 @@
 #import "RSWebStore.h"
 #import "RSTweet.h"
 #import "RSTweetViewCell.h"
-@interface ViewController ()<UIScrollViewDelegate,TweetViewCellDelegate>
+@interface RSViewController ()<UIScrollViewDelegate,TweetViewCellDelegate>
 {
     NSMutableArray *tweets;
     BOOL loadingTweets;
@@ -20,24 +20,25 @@
     BOOL initialLoadDone;
     int tweetsLimit;
     int tweetOffset;
-    UITableViewLoadingFooter *tableViewLoadingFooter;
+    RSUITableViewLoadingFooter *tableViewLoadingFooter;
     CGFloat previousScrollViewYOffset;
 }
 @property (nonatomic, strong) UIRefreshControl *refreshControl;
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 @end
 
-@implementation ViewController
+@implementation RSViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     tweetsLimit=15;
     isRefreshing = YES;
+    self.tableView.allowsMultipleSelectionDuringEditing = NO;
     NSString* query =[self URLEncodeStringFromString:@"@peek"];
     NSString *q= [NSString stringWithFormat:@"%@", query];
     self.strTemp=[NSString stringWithFormat:@"?q=%@&count=%d&result_type=mixed",q,tweetsLimit ];
     self.strNextURL= [NSString stringWithFormat:@"?q=%@&count=%d&result_type=mixed",q,tweetsLimit ];
-    tableViewLoadingFooter = (UITableViewLoadingFooter*)self.tableView.tableFooterView;
+    tableViewLoadingFooter = (RSUITableViewLoadingFooter*)self.tableView.tableFooterView;
     if([[NSUserDefaults standardUserDefaults] stringForKey:@"TOKEN"]){
         [self beginRefresh];
     }
@@ -204,7 +205,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *cellIdentifier = @"TweetViewCell";
+    static NSString *cellIdentifier = @"RSTweetViewCell";
     RSTweetViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (cell == nil) {
         [self.tableView registerNib:[UINib nibWithNibName:cellIdentifier bundle:nil] forCellReuseIdentifier:cellIdentifier];
@@ -229,6 +230,17 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    // Return YES if you want the specified item to be editable.
+    return YES;
+}
+
+// Override to support editing the table view.
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        [self processBtnClick:indexPath.row];
+    }
+}
 
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
@@ -246,10 +258,10 @@
     }
     
 }
-- (void)processBtnClick:(UIButton *)button{
+- (void)processBtnClick:(NSInteger)tag{
     
-    [tweets removeObjectAtIndex:button.tag];
-    [self.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:[NSIndexPath indexPathForRow:button.tag inSection:0]] withRowAnimation:UITableViewRowAnimationMiddle];
+    [tweets removeObjectAtIndex:tag];
+    [self.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:[NSIndexPath indexPathForRow:tag inSection:0]] withRowAnimation:UITableViewRowAnimationMiddle];
     [self.tableView reloadData];
 }
 

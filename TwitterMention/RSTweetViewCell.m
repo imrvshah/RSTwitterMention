@@ -12,7 +12,7 @@
 #define POST_TEXT_HEIGHT 110
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 
-@implementation TweetViewCell
+@implementation RSTweetViewCell
 
 + (UILabel*)tweetLabel
 {
@@ -35,7 +35,7 @@
                                   context:context].size;
     
     size = CGSizeMake(ceil(boundingBox.width), ceil(boundingBox.height));
-    cellHeight=120;
+    cellHeight=60;
     cellHeight +=  size.height;
     tweet.tweetHeight= size.height+5;
     return MAX(cellHeight, 44) ;
@@ -90,9 +90,9 @@
     self.twitterHandle.text = self.tweet.tweetHandle;
 }
 
-- (IBAction)onDeleteBtnClick:(UITableViewCell*)sender
+- (IBAction)onDeleteBtnClick:(UIButton*)sender
 {
-    [self.delegate processBtnClick:sender];
+    [self.delegate processBtnClick:sender.tag];
 }
 
 - (IBAction)onRetweetBtnClick:(id)sender

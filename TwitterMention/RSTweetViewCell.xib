@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell opaque="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TweetViewCell" rowHeight="355" id="8x5-Ey-Y9R" userLabel="TweetViewCell" customClass="RSTweetViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="234"/>
+        <tableViewCell opaque="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RSTweetViewCell" rowHeight="310" id="8x5-Ey-Y9R" userLabel="TweetViewCell" customClass="RSTweetViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="189"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8x5-Ey-Y9R" id="WuN-UT-jfX">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="234"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="188.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="1000" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDl-Ua-5JE">
-                        <rect key="frame" x="14" y="55" width="298" height="128"/>
+                        <rect key="frame" x="14" y="55" width="298" height="0.0"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
@@ -44,28 +45,8 @@
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="1S9-Mx-adK" userLabel="DeleteBtn">
-                        <rect key="frame" x="257" y="190" width="41" height="28"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="28" id="9Q9-p5-Vjq"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="12"/>
-                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                        <inset key="contentEdgeInsets" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
-                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        <state key="normal" image="thrash">
-                            <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                        </state>
-                        <state key="highlighted">
-                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                        </state>
-                        <connections>
-                            <action selector="onDeleteBtnClick:" destination="8x5-Ey-Y9R" eventType="touchUpInside" id="lgg-GL-mDc"/>
-                        </connections>
-                    </button>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailingMargin" secondItem="1S9-Mx-adK" secondAttribute="trailing" constant="14" id="0Lh-Yy-vqq"/>
                     <constraint firstItem="FDl-Ua-5JE" firstAttribute="trailing" secondItem="WuN-UT-jfX" secondAttribute="trailingMargin" id="38g-5u-Gt7"/>
                     <constraint firstItem="FDl-Ua-5JE" firstAttribute="top" secondItem="hbC-6M-STG" secondAttribute="bottom" constant="2" id="4j2-B3-4G2"/>
                     <constraint firstItem="hbC-6M-STG" firstAttribute="top" secondItem="WuN-UT-jfX" secondAttribute="topMargin" constant="5" id="7Lc-ym-xKb"/>
@@ -76,25 +57,19 @@
                     <constraint firstAttribute="trailingMargin" secondItem="bUz-TE-b5e" secondAttribute="trailing" constant="34" id="Tjv-lv-PEF"/>
                     <constraint firstItem="FDl-Ua-5JE" firstAttribute="top" secondItem="hbC-6M-STG" secondAttribute="bottom" constant="2" id="elv-Q7-Fvb"/>
                     <constraint firstItem="hbC-6M-STG" firstAttribute="leading" secondItem="WuN-UT-jfX" secondAttribute="leadingMargin" constant="6" id="jgK-Ty-pwL"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="1S9-Mx-adK" secondAttribute="bottom" constant="8" id="mER-VL-eZ1"/>
                     <constraint firstItem="Re8-r8-Rkc" firstAttribute="leading" secondItem="hbC-6M-STG" secondAttribute="trailing" constant="17" id="q7G-3g-HTx"/>
                     <constraint firstAttribute="trailingMargin" secondItem="Re8-r8-Rkc" secondAttribute="trailing" constant="40" id="r8a-LI-JKS"/>
                     <constraint firstItem="bUz-TE-b5e" firstAttribute="leading" secondItem="hbC-6M-STG" secondAttribute="trailing" constant="17" id="r9M-KC-o47"/>
-                    <constraint firstItem="1S9-Mx-adK" firstAttribute="top" secondItem="FDl-Ua-5JE" secondAttribute="bottom" constant="7" id="re2-T5-j3F"/>
                     <constraint firstItem="bUz-TE-b5e" firstAttribute="top" secondItem="WuN-UT-jfX" secondAttribute="topMargin" constant="7" id="z0G-DX-w6k"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="twitterAvatar" destination="hbC-6M-STG" id="x3E-5P-Y89"/>
                 <outlet property="twitterContent" destination="FDl-Ua-5JE" id="FS9-9f-CJH"/>
-                <outlet property="twitterDeleteBtn" destination="1S9-Mx-adK" id="RKB-NO-ZCP"/>
                 <outlet property="twitterHandle" destination="Re8-r8-Rkc" id="f0U-Nm-4z4"/>
                 <outlet property="twitterName" destination="bUz-TE-b5e" id="5uK-EK-xaf"/>
             </connections>
-            <point key="canvasLocation" x="405" y="159"/>
+            <point key="canvasLocation" x="405" y="136.5"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="thrash" width="25" height="28"/>
-    </resources>
 </document>
